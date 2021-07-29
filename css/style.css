@@ -44,3 +44,31 @@
     margin-right: 50px;
   }
 }
+.float-red {
+  background: #ff0000;
+  float: left;
+}
+.float-blue {
+  background: #0008ff;
+  float: left;
+}
+.clearfix {
+  content: "";
+  display: inline-block;
+  clear: both;
+  position: relative;
+  left: 50%;
+}
+.float {
+  position: relative;
+  overflow: hidden;
+}
+.position {
+  position: relative;
+  left: -50%;
+}
+@media screen and (max-width: 960px) {
+  .float-red, .float-blue {
+    float: none;
+  }
+}
