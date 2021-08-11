@@ -90,6 +90,7 @@
 .flex-reverse {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 @media screen and (max-width: 960px) {
   .flex-reverse {
@@ -99,6 +100,15 @@
 .flex-order {
   display: flex;
   justify-content: center;
+}
+.flex-green {
+  order: 1;
+}
+.flex-yellow {
+  order: 2;
+}
+.flex-purple {
+  order: 3;
 }
 @media screen and (max-width: 960px) {
   .flex-green {
@@ -123,6 +133,7 @@
 .none-red {
   background: #ff0000;
   margin: 0px;
+  display: block;
 }
 .none-blue {
   background: #0008ff;
@@ -142,6 +153,6 @@
     display: none;
   }
   .none-blue {
-    display: inline-block;
+    display: block;
   }
 }
